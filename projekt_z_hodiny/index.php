@@ -1,5 +1,6 @@
 <?php
 
+include 'Person.php';
 include 'Student.php';
 include 'Classroom.php';
 

@@ -1,15 +1,14 @@
 <?php
 
-class Student
+include 'Person.php';
+
+class Student extends Person
 {
-    public string $name;
-    public int $age;
     public bool $isEnrolled;
 
     public function __construct(string $name, int $age)
     {
-        $this->name = $name;
-        $this->age = $age;
+        parent::__construct($name, $age); // volání rodičovského konstruktoru
         $this->isEnrolled = false;
     }
 
